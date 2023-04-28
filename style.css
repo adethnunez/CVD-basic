@@ -135,6 +135,7 @@ padding: 1.5rem;
   align-items: center;
   justify-content: space-between;
 
+  
 }
 
 .header .branding {
@@ -582,20 +583,20 @@ font-size: 1.5rem;
 /*------------ABOUT PAGE - BANNER-------------*/
 
 .aboutpage-banner{
-padding-top: 13rem;
-padding-bottom: 5rem;
-}
-
-.aboutpage-banner .aboutpage-banner__wrapper{
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.aboutpage-banner .aboutpage-banner__text{
-max-width: 55rem;
-
-}
+  padding-top: 13rem;
+  padding-bottom: 5rem;
+  }
+  
+  .aboutpage-banner .services__items:nth-child(2){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  .aboutpage-banner .aboutpage-banner__text{
+  max-width: 55rem;
+  
+  }
 
 .aboutpage-banner .aboutpage-banner__text h2{
 color: #ffa700;
@@ -631,7 +632,7 @@ height: 100%;
 .aboutpage-banner .angledown-icon{
 display: flex;
 justify-content: center;
-margin-top: 5rem;
+margin-top: 3rem;
 }
 
 .aboutpage-banner .angledown-icon{
@@ -764,9 +765,110 @@ width: 100%;
 
 }
 
+/*------------SERVICES PAGE - BANNER-------------*/
+
+.services__banner .services__items:first-child{
+    padding-top: 13rem;
+    padding-bottom: 5rem;
+    }
+.services__banner .services__items:not(:first-child){
+  padding: 5rem 0;
+      }
+
+.services__banner .services__items:nth-child(2){
+ background: #2b2b2b;
+ color:#f5f5f5;
+
+}
+    
+.services__items .kamote{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services__banner .services__content{
+  display: flex;
+  max-width: 140rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.services__banner .services__banner__text h2{
+  color: #ffa700;
+  font-size: 8rem;
+  font-weight: 600;
+  line-height: 8.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.services__banner .services__banner__text p{
+  max-width: 50rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.services__banner .services__banner__text h3{
+  color: #ffa700;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.services__banner .services__banner__text h5{
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.services__banner .angledown-icon a{
+  display: flex;
+  justify-content: center;
+
+}
 
 
+.services__banner .angledown-icon a{
+  color: #ffa700;
+  font-size: 30px;
+}
 
+.services__banner .angledown-icon:hover{
+  color: #2b2b2b;
+}
+
+
+@media screen and (max-width: 500px){
+  .services__banner {
+    padding-top: 13rem;
+    padding-bottom: 5rem;
+    }
+    
+    .services__banner .services__content{
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 0 3rem;
+    }
+    .services_banner .services__items .kamote {
+      max-width: 20rem;
+      width: 25rem;  
+
+    }
+    .services_banner .services__banner__text h2 {
+      font-size: 3rem;
+      text-align: center;
+      line-height: 1.2rem;
+    }
+    .services_banner .services__items:nth-child(2) img {
+      padding-top: 5rem;
+      order: 1rem;
+      padding-top: 5rem;
+    }
+    
+    
+ 
+    }
+  
     /*--------------- Repeatable Pattern--------------------*/
 
     .btn {
