@@ -895,83 +895,140 @@ width: 100%;
     }
     /*------------UPDATES PAGE - BANNER 1-------------*/
 
-.updates__banner{
+.updates {
   padding-top: 13rem;
-  padding-bottom: 100rem;
+  padding-bottom: 5rem;
+  
 }
 
-.updates__banner .updates__text h2{
+.updates .updates__title h2 {
   color: #ffa700;
   font-size: 5rem;
   font-weight: 600;
 }
 
-.updates__banner .updates__wrapper {
-display: grid;
-grid-template-columns: 2.5fr 1fr;
-grid-gap: 5rem;
-padding-bottom: 5rem;
+.updates .updates__wrapper {
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+  grid-gap: 5rem;
 }
-.updates__banner .updates__wrapper img {
-  justify-content: left;
+.updates .updates__left__item {
+  padding: 5rem 0;
+}
+.updates .updates__left__item:not(:last-child) {
+  border-bottom: 5px solid gray;
+}
+.updates .updates__left__item img {
   width: 100%;
-
-
 }
-
-.updates__banner .updates__wrapper h3{
-  color: #ffa700;
-  font-size: 3rem;
-  font-weight: 600;
-
-}
-
-.updates__banner .updates__details{
+.updates .updates__left__item ul {
   display: flex;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
 }
-
-.updates__banner .details-icons{
-  margin-right: 8rem;
+.updates .updates__left__item ul li{
+  margin-right: 5rem;
 }
-
-.updates__banner .updates__details p{
-  display: inline;
-  margin-left: 1rem;
+.updates .updates__left__item ul i{
+  margin-right: 1.5rem;
+  font-size: 2rem;
 }
-
-.updates__banner .categories__wrapper{
-  display: flex;
-  line-height: 3;
+.updates .updates__left__item__text{
+  padding: 3rem 0;
 }
-
-.updates__banner .description{
-  margin-left: 10rem;
-  font-weight: 800;
-}
-
-.updates__banner .number{
-  margin-left: 10rem;
-  font-weight: 800;
-}
-
-.updates__banner .description h3{
+.updates .updates__left__item__text h3{
   color: #ffa700;
   font-size: 3rem;
   font-weight: 600;
+  padding-top: 3rem;
 }
-
-.updates__banner .explanation h3{
-  color: #ffa700;
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
-.updates__banner .explanation p{
-  line-height: 2;
+.updates .updates__left__item__text p{
+  margin: 2rem 0;
   text-align: justify;
 }
+.updates .updates__left__item__text a{
+  color: #ffa700;
+}
+.updates .updates__right__item {
+  padding: 5rem 0;
+ 
+}
+.updates .updates__right__item h3 {
+  color: #ffa700;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.updates .updates__right__item table {
+  width: 100%;
+}
+.updates .updates__right__item table tr{
+  height: 5rem;
+}
+.updates .updates__right__item table tr td{
+  font-size: 2rem;
+}
+.updates .updates__right__item table tr td:last-child{
+  text-align: right;
+}
+.updates .updates__right__items:not(:last-child) {
+  border-bottom: 5px solid gray;
+}
+.updates .updates__right .updates__right__item__content {
+  display: flex;
+  margin-bottom: 3rem;
+  gap: 3rem;
+
+}
+.updates .updates__right .updates__right__item__content .updates__right__item__content__text p:first-child {
+ font-weight: 600;
+}
+.updates .updates__right .updates__right__item__content .updates__right__item__content__text p:last-child {
+  margin-top: 3rem;
+ }
+
+.update .update-_right__item .update__right__item__tags a {
+  margin:1rem;
+  width:1.5rem;
+}
+
+@media screen and (max-width: 500px){
+  .updates {
+    padding-bottom: 0rem;
+  }
+  .updates .updates__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .updates .updates__title h2  {
+
+    text-align:center;
+   }
+
+  /*
+  .updates .updates__title h2, p, ul {
+   text-align: center;
+  }
+
+  
+  .updates .updates__left__item__text  {
+    font-size: ;
+    text-align: center;
+  }
+  .updates .updates__right__item h3{
+    text-align:center
+   
+  } */
+  .updated__right__item__tags {
+    text-align:center;
+    flex-direction: column;
+  
+
+}
+}
+
 
    /*--------------- Contact--------------------*/
    .contact{
@@ -1032,8 +1089,6 @@ padding-bottom: 5rem;
   .contact__details p {
     color: #f5f5f5;
     margin-left: 6rem;
- 
-
   }
 
 
@@ -1074,6 +1129,16 @@ padding-bottom: 5rem;
       border:1px solid #222222;
 
   }
+  .btn.trans{
+    background:transparent;
+    color: #222222;
+    border:1px solid #2b2b2b;
+}
+.btn.trans:hover{
+    background:#222222;
+    color: #ffffff;
+
+}
 
 
 
