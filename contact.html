@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Creative Visual Design - Contact Page</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/1c76e7983b.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <header class="header">
+    <header class="contact_header">
         <div class="container">
             <div class="header__wrapper">
                 <div class="branding">
@@ -20,11 +20,11 @@
 
                 <div class="header__nav">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Updates</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./aboutPage.html">About</a></li>
+                        <li><a href="./Services.html">Services</a></li>
+                        <li><a href="./Updates.html">Updates</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </div>
 
@@ -33,35 +33,32 @@
                     <span></span>
                     <span></span>
                 </div>
-
             </div>
-        </div>
+        </div> 
     </header>
 
-    <section>
-        <div class="contact">
-            <div class="container">
-                <div class="about__wrapper">
-                    <div class="about__text">
-                        <h2>Contact</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur. Orci sodales vivamus fringilla aliquam natoque mi ler.</p>
+    <section class="contactpage__banner">
+        <div class="container">
+            <h2>Contact</h2>
+            
+            <div class="contactpage__wrapper">
+                <div class="contactpage__details">
+                    <p class="contact__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, officia. Est, omnis iure. Lorem ipsum dolor </p>
 
+                    <div class="contacts">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+63 975 432 3442</p>
                     </div>
-                    <div class="contact__details" >
-                        <div class="phone">
-                            <a href="" class="phone"><i class="fa-solid fa-phone"></i></a>
-                            </div>
-                            <p>+63 995 204  2345</p>
-                        <div class="email">
-                            <a href="" class="email"><i class="fa-solid fa-envelope"></i></a>
-                            </div>
-                            <p>bernadette nunez005@gmail.com</p>
-                            <div class="loc">
-                                <a href="" class="loc"><i class="fa-solid fa-location-dot"></i></a>
-                                </div>
-                                <p>Calauag, Quezon</p>
+                    <div class="contacts">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>inquire@creativevisualdesigns.com</p>
                     </div>
-                    <div class="contact__icons">  
+                    <div class="contacts">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Baloc Road, Brgy. San Ignacio, San Pablo City, Laguna, Philippines 4000</p>
+                    </div>
+            
+                    <div class="contact__icons">
                         <ul>
                             <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
                             <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
@@ -69,27 +66,32 @@
                             <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                         </ul>
                     </div>
-                    <div class="Contactform">
-                        <form>
-                            <label for="fname"><br>
-                            <input type="text" id="fname" name="fname"><br>
-                            <label for="lname"><br>
-                            <input type="text" id="lname" name="lname"> <br>
-                            <label for="lname"><br>
-                            <input type="text" id="lname" name="lname">
-                          </form>
-                    </div> 
+
                 </div>
+
+                <div class="contact__form">
+                    <form action="#">
+                        <input type="text" id="name" name="name" placeholder="NAME"> <br>
+                        <input type="text" id="email" name="email" placeholder="EMAIL"> <br>
+                        <textarea name="message" id="msg" cols="20" rows="8" placeholder="MESSAGE"></textarea> <br>
+
+                        <div class="submit__btn">
+                            <a href="" class="btn yellow-white">SEND MESSAGE</a>
+                        </div>
+
+                    </form>
+                </div>
+                
             </div>
         </div>
     </section>
 
-
+    
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
-                
-                <div class="footer__icons">  
+    
+                <div class="footer__icons">
                     <ul>
                         <li> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
                         <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
@@ -99,10 +101,10 @@
                     </ul>
                 </div>
     
-                <div class="footer__text">  
+                <div class="footer__text">
                     <p> Baloc Road, Brgy. San Ignacio, San Pablo City, Laguna, Philippines 4000 </p>
                 </div>
-                <div class="footer__copyright">  
+                <div class="footer__copyright">
                     <p>©Creative Visual Design 2023</p>
                 </div>
     
@@ -111,5 +113,6 @@
     </footer>
 
     <script src="./script.js"></script>
+
 </body>
 </html>
